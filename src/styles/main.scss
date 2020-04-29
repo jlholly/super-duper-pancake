@@ -1,5 +1,22 @@
-$bg: green;
+// UTILITIES -- do not directly output into css when compiled
+@import "utilities/variables.scss";
+@import "utilities/functions.scss";
+@import "utilities/mixins.scss";
 
+// VENDOR -- vendor and third-party code for external libraries
+@import "vendor/normalize.scss";
+
+// BASE -- boilerplate code
+
+// COMPONENTS -- styles for page components
+
+// LAYOUT -- styles involved with the layout
+
+// PAGES -- any styles specific to inidividual pages
+
+// THEMES -- files for specific themes
+
+// TEST -- test code
 body {
-  background: $bg;
+  background-color: $bg;
 }
