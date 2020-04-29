@@ -1,24 +1,31 @@
-const HtmlWebPackPlugin = require('html-webpack-plugin');
-
-var path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: 'index.js',
+  entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: 'main.[hash].js'
-  }
+    path: __dirname + '/dist',
+    filename: 'index_bundle.js'
+  },
   module: {
     rules: [
       {
-
-      },
+        test: /\.s[ac]ss$/i,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
+      }
     ]
   },
   plugins: [
-    new HtmlWebPackPlugin({
-      template: "./src/index.html",
-      filename: "./index.html"
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './src/assets/index.html'
     }),
-  ],
-}
+    new HtmlWebpackPlugin({
+      filename: 'covid19academy.html',
+      template: './src/assets/index.html'
+    })
+  ]
+};
