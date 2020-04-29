@@ -1,17 +1,27 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname + '/dist',
-    filename: 'index_bundle.js'
+    filename: '[name].[contentHash].bundle.js'
+  },
+  optimization : {
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: 'style'
+        }
+      },
+    },
   },
   module: {
     rules: [
       {
         test: /\.s[ac]ss$/i,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader, // Need to setup so not used in development mode
           'css-loader',
           'sass-loader'
         ]
@@ -19,6 +29,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: "[name].[contentHash].css"
+    }),
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './src/assets/index.html'
