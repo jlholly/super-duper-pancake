@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname + '/dist',
-    filename: '[name].[contentHash].bundle.js'
+    filename: '[name].[contentHash:5].bundle.js'
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -15,8 +15,8 @@ module.exports = {
       template: './src/assets/index.html'
     }),
     new HtmlWebpackPlugin({
-      filename: 'covid19academy.html',
-      template: './src/assets/covid19academy.html'
+      filename: 'nursingbsn.html',
+      template: './src/assets/nursingbsn.html'
     }),
   ],
 };
