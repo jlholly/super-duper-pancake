@@ -41,6 +41,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "include-media": "^1.4.9",
     "modernizr": "^3.11.1",
     "normalize.css": "^8.0.1"
   }

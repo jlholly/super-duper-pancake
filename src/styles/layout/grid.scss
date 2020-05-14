@@ -1,6 +1,6 @@
 body {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: ;
-  grid-template-rows: ;
+  -ms-grid-columns: 1fr (64px 16px)[15] 64px 1fr;
+  grid-columns:1fr repeat(15, 64px 16px) 64px 1fr;
 }

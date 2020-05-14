@@ -5,6 +5,7 @@
 
 // VENDOR -- vendor and third-party code for external libraries
 @import "../../node_modules/normalize.css/normalize.css";
+@import "../../node_modules/include-media/dist/_include-media.scss";
 
 // BASE -- boilerplate code
 @import "base/base.scss";
