@@ -15,8 +15,8 @@ module.exports = {
       template: './src/assets/index.html'
     }),
     new HtmlWebpackPlugin({
-      filename: 'nursingbsn.html',
-      template: './src/assets/nursingbsn.html'
+      filename: 'onecolumn.html',
+      template: './src/assets/onecolumn.html'
     }),
   ],
 };
