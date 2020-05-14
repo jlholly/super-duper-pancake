@@ -4,13 +4,22 @@
 @import "utilities/mixins.scss";
 
 // VENDOR -- vendor and third-party code for external libraries
-@import "vendor/normalize.scss";
+@import "../../node_modules/normalize.css/normalize.css";
 
 // BASE -- boilerplate code
+@import "base/base.scss";
+@import "base/typography.scss";
+@import "base/animation.scss";
+@import "base/utilities.scss";
 
 // COMPONENTS -- styles for page components
 
 // LAYOUT -- styles involved with the layout
+@import "layout/grid.scss";
+@import "layout/footer.scss";
+@import "layout/header.scss";
+@import "layout/navigation.scss";
+
 
 // PAGES -- any styles specific to inidividual pages
 
