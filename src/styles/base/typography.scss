@@ -1,0 +1,13 @@
+/* DEFAULT TYPE */
+html {
+  font-size: $base-size;
+}
+body {
+  font-family: $bodycopy;
+  line-height: 1.5*$base-size;
+  color:darkslategrey;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headlinecopy;
+  text-transform: uppercase;
+}

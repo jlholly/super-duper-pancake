@@ -22,10 +22,9 @@
 @import "layout/navigation.scss";
 
 // PAGES -- any styles specific to inidividual pages
+@import "pages/index.scss";
+@import "pages/onecolumn.scss";
 
 // THEMES -- files for specific themes
 
 // TEST -- test code
-body {
-  background-color: $bg;
-}
