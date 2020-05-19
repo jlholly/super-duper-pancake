@@ -1,12 +1,10 @@
-/* header.main, */ section.main /*, footer.main */ {
+%basic-grid {
   width: 100%;
   @supports (display: grid) {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: auto;
-    grid-template-rows: auto;
-    -ms-grid-columns:(64px)[5] ;
-    grid-template-columns: repeat(5, 64px);
+    -ms-grid-columns:1fr (64px)[5] 1fr;
+    grid-template-columns:1fr repeat(5, 64px) 1fr;
     @include media(">=768px", "<1024px") {
       -ms-grid-columns:1fr (64px)[10] 1fr;
       grid-template-columns:1fr repeat(10, 64px) 1fr;
@@ -20,4 +18,10 @@
       grid-template-columns:1fr repeat(19, 64px) 1fr;
     }
   }
+}
+
+section.main {
+  @extend %basic-grid;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
 }
