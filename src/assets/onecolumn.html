@@ -71,11 +71,11 @@
       </div>
       <nav class="subsite-nav-1col">
         <ul>
-          <li><a href="#"><img src="" alt="">apply now</a></li>
-          <li><a href="#"><img src="" alt="">financial aid</a></li>
-          <li><a href="#"><img src="" alt="">admissions requirements</a></li>
-          <li><a href="#"><img src="" alt="">prerequisite course requirements</a></li>
-          <li><a href="#"><img src="" alt="">departmental requirements</a></li>
+          <li class="card"><a href="#"><img src="" alt="">apply now</a></li>
+          <li class="card"><a href="#"><img src="" alt="">financial aid</a></li>
+          <li class="card"><a href="#"><img src="" alt="">admissions requirements</a></li>
+          <li class="card"><a href="#"><img src="" alt="">prerequisite course requirements</a></li>
+          <li class="card"><a href="#"><img src="" alt="">departmental requirements</a></li>
         </ul>
       </nav>
       <div class="intro-1col">
@@ -92,7 +92,9 @@
         </blockquote>
       </div>
       <div class="photofiller-1col">
-        <img src="" alt="">
+        <picture>
+          <img src="http://www.tnstate.edu/nursing/images/Mannequin.jpg" alt="Nursing Students with Mannequin" loading="lazy">
+        </picture>
       </div>
       <div class="ul-1col">
         <h1>Participants in the program will:</h1>
@@ -121,5 +123,9 @@
     <footer class="main">
       footer
     </footer>
+    <script type="text/javascript">
+      var heroImage = document.querySelector('img.hero-img');
+      objectFitImages(heroImage);
+    </script>
   </body>
 </html>
