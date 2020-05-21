@@ -1,0 +1,18 @@
+.button, .button-sml, .button-lrg {
+  display: block;
+  color: white;
+  font-family: $headlinecopy;
+  text-transform: uppercase;
+  background-color: $brand-main-color;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  transition: box-shadow .2s;
+  &:hover {
+    background-color: #0057a8;
+    box-shadow: 2px 4px 8px rgba(0,0,0,.25);
+  }
+}
+.button-sml {
+  padding: 16px 24px;
+}

@@ -1,24 +1,23 @@
 %basic-grid {
   width: 100%;
-  @supports (display: grid) {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns:1fr (64px)[5] 1fr;
-    grid-template-columns:1fr repeat(5, 64px) 1fr;
-    @include media(">=768px", "<1024px") {
-      -ms-grid-columns:1fr (64px)[10] 1fr;
-      grid-template-columns:1fr repeat(10, 64px) 1fr;
-    }
-    @include media(">=1024px", "<1472px") {
-      -ms-grid-columns:1fr (64px)[14] 1fr;
-      grid-template-columns:1fr repeat(14, 64px) 1fr;
-    }
-    @include media(">=1472px") {
-      -ms-grid-columns:1fr (64px)[19] 1fr;
-      grid-template-columns:1fr repeat(19, 64px) 1fr;
-    }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns:1fr (64px)[5] 1fr;
+  grid-template-columns:1fr repeat(5, 64px) 1fr;
+  @include media(">=768px", "<1024px") {
+    -ms-grid-columns:1fr (64px)[10] 1fr;
+    grid-template-columns:1fr repeat(10, 64px) 1fr;
+  }
+  @include media(">=1024px", "<1472px") {
+    -ms-grid-columns:1fr (64px)[14] 1fr;
+    grid-template-columns:1fr repeat(14, 64px) 1fr;
+  }
+  @include media(">=1472px") {
+    -ms-grid-columns:1fr (64px)[19] 1fr;
+    grid-template-columns:1fr repeat(19, 64px) 1fr;
   }
 }
+
 
 section.main {
   @extend %basic-grid;
