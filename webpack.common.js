@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: __dirname + '/dist',
-    filename: 'scripts/[name].[contentHash:5].bundle.js'
+    filename: 'scripts/[name].[chunkhash:5].bundle.js'
   },
   plugins: [
     new CleanWebpackPlugin(),
