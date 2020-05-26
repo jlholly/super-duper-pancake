@@ -50,7 +50,7 @@
 .hero-img {
   object-fit: cover;
   object-position: center top;
-  font-family: 'object-fit: cover;';
+  font-family: 'object-fit: cover; object-position: center top';
 }
 .hero-1col, .hero-img {
   width: 100%;
@@ -75,6 +75,17 @@
   @include media(">=1024px") {
     font-size: 1rem;
     padding: 0 0 64px 0;
+  }
+  html[data-useragent*='Windows NT 10.0'] & {
+    display: block;
+  }
+  html[data-useragent*='Windows NT 10.0'] & h1 {
+    margin-top: -1em;
+  }
+  html[data-useragent*='Windows NT 10.0'] & h1, html[data-useragent*='Windows NT 10.0'] & h2 {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
   }
 }
 .callout-1col {
