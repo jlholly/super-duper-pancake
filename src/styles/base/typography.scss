@@ -7,10 +7,12 @@ body {
   font-size: $base-size;
   letter-spacing: 0.5px;
   font-weight: 400;
+  @include text-crop;
 }
 h1, h2, h3, h4, h5, h6, .subtitle1, .subtitle2, .button {
   font-family: $headlinecopy;
   text-transform: uppercase;
+  margin: 0;
 }
 h1, h2 {
   font-weight: 300;
@@ -24,19 +26,6 @@ h6, .subtitle2, .button {
 h1 {
   font-size: 6 * $base-size;
   letter-spacing: -1.5px;
-  line-height: 1.25;
-  &::before, &::after {
-    content: '';
-    display: block;
-    height: 0;
-    width: 0;
-  }
-  &::before {
-    
-  }
-  &::after {
-
-  }
 }
 h2 {
   font-size: 3.75 * $base-size;
@@ -77,8 +66,10 @@ h6 {
 .caption {
   font-size: 0.75 * $base-size;
   letter-spacing: 0.4px;
+  margin: 0;
 }
 .overline {
   font-size: 0.625 * $base-size;
   letter-spacing: 1.5px;
+  margin: 0;
 }
