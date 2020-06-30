@@ -61,19 +61,23 @@
   position: absolute;
   bottom: 0;
   z-index: 1;
-  font-size: .5rem;
   padding: 32px;
+
   h1, h2 {
     color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.35);
-    margin: 0;
+  }
+  h1 {
+    @include text-crop($bottom-adjustment: 2px, $line-height: 1);
+  }
+  h2 {
+    margin-top: .5em;
+    @include text-crop($top-adjustment: -1px, $bottom-adjustment: 1px, $line-height: 1.1);
   }
   @include media(">=768px", "<1024px") {
-    font-size: .75rem;
     padding: 0 0 32px 0;
   }
   @include media(">=1024px") {
-    font-size: 1rem;
     padding: 0 0 64px 0;
   }
   html[data-useragent*='Windows NT 10.0'] & {

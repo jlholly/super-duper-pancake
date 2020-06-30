@@ -4,30 +4,72 @@ html {
 }
 body {
   font-family: $bodycopy;
-  line-height: 1.5*$base-size;
-  color:darkslategrey;
+  font-size: $base-size;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  @include text-crop;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, .subtitle1, .subtitle2, .button {
   font-family: $headlinecopy;
   text-transform: uppercase;
-  font-weight: normal;
-  line-height: 1.25em;
+  margin: 0;
+}
+h1, h2 {
+  font-weight: 300;
+}
+h3, h4, h5, .subtitle1 {
+  font-weight: 400;
+}
+h6, .subtitle2, .button {
+  font-weight: 500;
 }
 h1 {
-  font-size: 3.25em;
+  font-size: 6 * $base-size;
+  letter-spacing: -1.5px;
 }
 h2 {
-  font-size: 2.5em;
+  font-size: 3.75 * $base-size;
+  letter-spacing: -0.5px;
 }
 h3 {
-  font-size: 2em;
+  font-size: 3 * $base-size;
+  letter-spacing: 0px;
 }
 h4 {
-  font-size: 1.5em;
+  font-size: 2.125 * $base-size;
+  letter-spacing: 0.25px;
 }
 h5 {
-  font-size: 1em;
+  font-size: 1.5 * $base-size;
+  letter-spacing: 0px;
 }
 h6 {
-  font-size: .5em;
+  font-size: 1.25 * $base-size;
+  letter-spacing: 0.15px;
+}
+.subtitle1 {
+  font-size: $base-size;
+  letter-spacing: 0.15px;
+}
+.subtitle2, .body2, .button {
+  font-size: 0.875 * $base-size;
+}
+.subtitle2 {
+  letter-spacing: 0.1px;
+}
+.body2 {
+  letter-spacing: 0.25px;
+}
+.button {
+  letter-spacing: 1.25px;
+}
+.caption {
+  font-size: 0.75 * $base-size;
+  letter-spacing: 0.4px;
+  margin: 0;
+}
+.overline {
+  font-size: 0.625 * $base-size;
+  letter-spacing: 1.5px;
+  margin: 0;
 }
