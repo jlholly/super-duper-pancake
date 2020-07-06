@@ -40,7 +40,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "modernizr": "^3.11.2",
+    "modernizr": "^3.11.3",
     "normalize.css": "^8.0.1",
     "object-fit-images": "^3.2.4",
     "picturefill": "^3.0.3"
