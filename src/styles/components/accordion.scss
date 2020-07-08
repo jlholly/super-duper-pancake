@@ -1,0 +1,10 @@
+.ui-accordion-header {
+  padding: (1/3)*1em (4/3)*1em;
+  background-color: $tsu-blue;
+  color: white;
+  img {
+    object-fit: cover;
+    object-position: center top;
+    font-family: 'object-fit: cover; object-position: center top';
+  }
+}

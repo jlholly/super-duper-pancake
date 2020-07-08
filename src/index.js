@@ -1,6 +1,7 @@
 import './styles/main.scss';
 import '../node_modules/picturefill/dist/picturefill.min.js';
 import '../node_modules/object-fit-images/dist/ofi.js';
+import './scripts/accordion.js';
 
 // Create Picture Element for Legacy Browsers
 document.createElement("picture");

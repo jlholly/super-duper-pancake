@@ -1,4 +1,4 @@
-.hero-1col, .testimonial-1col, .stats-1col {
+.hero-1col,.hero-1col-sml, .testimonial-1col, .stats-1col {
   background-color: floralwhite;
   -ms-grid-column: 1;
   -ms-grid-column-span: 7;
@@ -42,7 +42,7 @@
 .subsite-nav-1col, .intro-1col, .testimonial-1col, .photofiller-1col, .ul-1col, .social-1col {
   padding: 16px 0;
 }
-.hero-1col {
+.hero-1col, .hero-1col-sml {
   -ms-grid-row: 1;
   grid-row: 1;
   position: relative;
@@ -52,9 +52,13 @@
   object-position: center top;
   font-family: 'object-fit: cover; object-position: center top';
 }
-.hero-1col, .hero-img {
+.hero-1col, .hero-1col .hero-img {
   width: 100%;
   height: calc(100vw * (9/21));
+}
+.hero-1col-sml, .hero-1col-sml .hero-img {
+  width: 100%;
+  height: calc(100vw * (4/21))
 }
 .hero-copy {
   @extend %basic-grid;

@@ -41,7 +41,6 @@
   },
   "dependencies": {
     "jquery": "^3.5.1",
-    "jquery-ui": "^1.12.1",
     "modernizr": "^3.11.3",
     "normalize.css": "^8.0.1",
     "object-fit-images": "^3.2.4",

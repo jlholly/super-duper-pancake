@@ -18,5 +18,9 @@ module.exports = {
       filename: 'onecolumn.html',
       template: './src/assets/onecolumn.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'return.html',
+      template: './src/assets/return.html'
+    }),
   ],
 };
